@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My HTML Site</title>
+    <title>Vishvesh's Homepage</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
     <style>
@@ -12,12 +12,16 @@
 </head>
 <body>
     <header>
-        <h1>My Website</h1>
-        <nav>
+        <h1>Vishvesh's Homepage</h1>
+
+        <input type="checkbox" id="toggle">
+        <label for="toggle">&#9776;</label>
+
+        <nav id="navbar">
             <ul>
                 <li><a href="#about_section">About</a></li>
-                <li><a href="#past_section">Past Projects</a></li>
-                <li><a href="#future_section">Future Plans</a></li>
+                <li><a href="#past_section">Past</a></li>
+                <li><a href="#future_section">Plans</a></li>
                 <li><a href="#contact_section">Contact</a></li>
                 <li><a href="#resources_section">Resources</a></li>
             </ul>
@@ -26,33 +30,36 @@
     
     <main>
         <section id="about_section">
+            <br>
+            <br>
             <h2>About</h2>
-            <p>Welcome to my website!</p>
+            <p>Welcome to my website! Here, I will be posting key information and updates on my life. This site is organized into 4 sections, according to their importance. </p>
             <strong>Feel free to explore this page, or get in touch with me in the contact form below!</strong>
             <br>
             <h3>Summary</h3>
             <p>Feel free to explore this page, or get in touch with me in the contact form below!</p>
-            <img src="./pic-square.png" alt="Image" width="150" height="150">
+            <img src="./pic-square.png" alt="An image of the author" width="150" height="150">
             <picture>
                 <!-- <source srcset="image-small.jpg" media="(max-width: 600px)">
                 <source srcset="image-large.jpg" media="(min-width: 601px)"> -->
-                <source srcset="./ucsd.jpeg" media="(min-width: 150px)"> 
-                <img src="./ucsd.png" alt="Image" width="150" height="150">
+                <source srcset="./ucsd-large.jpeg" media="(min-width: 150px)"> 
+                <img src="./ucsd.png" alt="An image of the word 'UCSD' with a trident" width="150" height="150">
             </picture>
             <iframe src="https://www.youtube.com/watch?v=hmj_mp0bQ8s" allowfullscreen></iframe>
             <audio src="audio.mp3" controls></audio>
             <video src="video.mp4"></video>
             <br>
             <h3>Schooling</h3>
-            <p>Schooling info</p>
+            <p>I completed my high school education from Kendriya Vidyalaya, Bengaluru. Then I pursued my higher secondary education from VVS Sardar Patel College. Then, I came to San Diego to enrol into UCSD for my BS in CS.</p>
             <br>
+            <hr>
         </section>
         
         <section id="past_section">
             <h2>Past projects</h2>
             <br>
             <h3>NLP chatbots</h3>
-            <p>Chatbot info</p>
+            <p>Chatbots are computer programs designed to simulate conversation with human users. They use natural language processing and machine learning techniques to understand and respond to user queries.</p>
             <canvas id="myCanvas" width="280" height="100" style="border:1px solid #000000;">
             </canvas>
             <script>
@@ -63,19 +70,21 @@
                 </script>
             <br>
             <h3>Image segments</h3>
-            <p>Image info</p>
-            <span> Please look at this example<svg width="300" height="200">
-                <polygon points="100,10 40,198 190,78 10,78 160,198"
-                style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;" />
-              </svg></span>
+            <p>Image segmentation is a computer vision task that involves dividing an image into multiple segments or regions. It is commonly used in object detection, image editing, and medical imaging applications.</p>
+            <span> Please look at this example
+                <br>
+                <svg width="150" height="100">
+                    <polygon points="50,5 20,99 95,39 5,39 80,99"
+                      style="fill: lime; stroke: purple; stroke-width: 2; fill-rule: evenodd;" />
+                  </svg></span>
             <h3>VR Showroom</h3>
-            <p>VR info</p>
+            <p>VR showrooms are virtual reality environments that allow users to explore and interact with products in a simulated 3D space. They are used in industries like automotive, real estate, and retail to showcase products and provide immersive experiences.</p>
             <em>Sample code in <em>VR Showroom</em> demo made using Unity</em>
             <br>
             <code>Javascript code</code>
-            <br>
             <pre>Javascript code continued</pre>
             <br>
+            <hr>
         </section>
 
         <section id="future_section">
@@ -83,12 +92,13 @@
             <p>Plans!</p>
             <br>
             <h3>LLM Research</h3>
-            <p>LLM info</p>
+            <p>LLM is a specialized language model designed to understand legal texts and documents. It can assist lawyers, legal researchers, and organizations in analyzing and processing legal information efficiently.</p>
             <h3>Industry Plans</h3>
-            <p>Industry info</p>
+            <p>The AI industry refers to the sector focused on the development and application of artificial intelligence technologies. It includes areas such as machine learning, natural language processing, computer vision, and robotics.</p>
             <h3>Higher Ed</h3>
-            <p>Higher ed info</p>
+            <p>Higher education in computer science offers advanced academic programs focusing on various aspects of computing. Students gain expertise in areas like algorithms, software development, data science, and artificial intelligence.</p>
             <br>
+            <hr>
         </section>
 
         <template id="myTemplate">
@@ -104,7 +114,8 @@
                 <li>CSE 151a</li>
                 <li>CSE 175</li>
             </ol>
-            
+            <br>
+            <p>Click to learn more!</p>
             <details>
                 <summary>CSE 134B</summary>
                 <p>Web development and planning. Learnt HTML, CSS, Javascript, and the best best web development practices in depth</p>
@@ -196,7 +207,7 @@
             <ul>
                 <li><a href="#">NLP Research</a></li>
                 <li><a href="#">Developer Tips</a></li>
-                <li><a href="#">Thoughts on AGI</a></li>
+                <li><a href="#">Thoughts on Generative AI</a></li>
             </ul>
         </aside>
         
@@ -208,7 +219,7 @@
     
 
     <figure>
-        <img src="./trident.png" width="120" height="100" alt="Image">
+        <img src="./trident.png" width="120" height="100" alt="An image of the UCSD trident">
         <figcaption>We are tritons!</figcaption>
     </figure>
     
